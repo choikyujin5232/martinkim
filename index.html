@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="/01.js"></script>
 
     <link rel="stylesheet" href="./css/reset.css">
 
@@ -24,7 +23,6 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/media.css">
 
 </head>
 
@@ -35,160 +33,184 @@
     <div id='wrap'>
         <header id="header">
             <div class="header__inner">
-                
-                <div class="only-pc">
-                    <a href="#" class="logo"></a>
-                    <ul class="menu">
-                        <li class="link matinkim-link">
-                            <a href="/matinkim.html" title="matinkim">Matin Kim</a>
-                            <div class="sub-menu-container">
-                                <ul class="header-sub-menu deps1">
-                                    <li>
-                                        <a href="#">NEW IN</a>
-                                    </li>
-                                    <li class="matinkim-shop">
-                                        <a class="sub-shop-menu" href="javascript:void(0);" style="font-weight: 700;">SHOP</a>
-                                        <div class="sub-shop-menu-container">
-                                            <div class="header-sub-menu deps11">
-                                                <ul class="sub-items">
-                                                    <li><a href="#"><span class="no-hover" style="font-weight: bold;">MEN'S LINE</span></a></li>
-                                                    <li><a href="#"><span class="no-hover" style="font-weight: bold;">Must Have</span></a></li>
-                                                    <li><a href="#"><span>Outerwears</span></a></li>
-                                                    <li><a href="#"><span>Tops</span></a></li>
-                                                </ul>
-                                                <ul class="sub-items">
-                                                    <li><a href="#"><span>Bottoms</span></a></li>
-                                                    <li><a href="#"><span>Dresses</span></a></li>
-                                                    <li><a href="#"><span>Shoes</span></a></li>
-                                                    <li><a href="#"><span>Bags</span></a></li>
-                                                    <li><a href="#"><span>Wallets</span></a></li>
-                                                </ul>
-                                                <ul class="sub-items">
-                                                    <li><a href="#"><span>Hats &amp; Caps</span></a></li>
-                                                    <li><a href="#"><span>Accessories</span></a></li>
-                                                    <li><a href="#"><span>Underwear</span></a></li>
-                                                    <li><a href="#"><span>Beauty</span></a></li>
-                                                    <li><a href="#"><span>Matin kim x Peaches</span></a></li>
-                                                </ul>
-                                                <ul>
-                                                    <li><a href="#"><span class="point" style="font-weight: bold;">BLACK FRIDAY SALE</span></a></li>
-                                                </ul>
-                                            </div>
-                                        </div><!-- sub-shop-menu-container -->
-                                    </li><!-- matinkim-shop -->
-                                    <li>
-                                        <a href="#">PROJECT</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">COLLECTIONS</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">ABOUT</a>
-                                    </li>
-                                </ul><!-- header-sub-menu deps1 -->
-                            </div><!-- sub-menu-container -->
-                        </li><!-- link matinkim-link -->
-
-                        <li class="link kimmatin-link">
-                            <a href="#">KIMMATIN</a>
-                            <div class="sub-menu-container">
-                                <ul class="header-sub-menu deps2">
-                                    <li class="kimmatin-archive">
-                                        <a href="javascript:void(0);">ARCHIVE</a>
-                                        <div class="header-sub-menu deps22">
-                                            <ul class="sub-items">
-                                                <li><a href="#"><span>WINTER 2024</span></a></li>
-                                                <li><a href="#"><span>FALL 2024</span></a></li>
-                                                <li><a href="#"><span>2ND SUMMER 2024</span></a></li>
-                                                <li><a href="#"><span>1ST SUMMER 2024</span></a></li>
-                                                <li><a href="#"><span>SPRING 2024</span></a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="kimmatin-shop">
-                                        <a href="javascript:void(0);" style="font-weight: 700;">SHOP</a>
-                                        <div class="header-sub-menu deps22">
-                                            <ul class="sub-items">
-                                                <li><a href="/product/kimmatin/list.html?cate_no=136"><span>New
-                                                            In</span></a>
-                                                </li>
-                                                <li><a href="#"><span>View All</span></a></li>
-                                                <li><a href="#"><span>Outer</span></a></li>
-                                                <li><a href="#"><span>Dresses &amp; Skirts</span></a></li>
-                                                <li><a href="#"><span>Tops</span></a></li>
-                                                <li><a href="#"><span>Pants &amp; Denim</span></a></li>
-                                                <li><a href="#"><span>Knitwear</span></a></li>
-                                                <li><a href="#"><span>Shoes &amp; Handbags</span></a></li>
-                                                <li><a href="#"><span>Other Accessories</span></a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <a href="#">NEW IN</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">ABOUT</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
+                <div class="nav-mobile" id="navMobile">
+                    <button class="nav-mobile__close">Close ✕</button>
+                    <ul class="nav-mobile__list">
+                        <li><a href="#">Matin Kim</a></li>
+                        <li><a href="#">KIMMATIN</a></li>
+                        <li><a href="#">Project</a></li>
+                        <li><a href="#">About</a></li>
                     </ul>
-                    <nav>
-                        <button class="header__menu-toggle" aria-label="Toggle Menu">
-                            ☰
-                        </button>
-                    </nav>
-                    <ul class="menu2">
-                        <li>
-                            <a href="javascript:matinkimSearchOpen();" class="pc-search-btn">
-                                <span class="util-icon util-search"></span>
-                                <span class="util-text">search</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:languageOpen();" class="pc-search-btn">
-                                <span class="util-icon util-lang"></span>
-                                <span class="util-text">Language</span>
-                            </a>
-                        </li>
-                        <li class="xans-element- xans-layout xans-layout-statelogoff ">
-                            <a href="javascript:login();">
-                                <span class="util-icon util-login"></span>
-                                <span class="util-text">account</span>
-                            </a>
-                        </li>
-                        <li class="xans-element- xans-layout xans-layout-statelogoff ">
-                            <a href="javascript:login();">
-                                <span class="util-icon util-wish"></span>
-                                <span class="util-text">wish</span>
-                            </a>
-                        </li>
-                        <li class="xans-element- xans-layout xans-layout-statelogoff ">
-                            <a href="javascript:basketOpen();">
-                                <span class="util-icon util-cart"></span>
-                                <span class="util-text EC-Layout-Basket-count">0</span>
-                            </a>
-                        </li>
-                    </ul>
+                    <ul class="nav-mobile__list util">
+                        <li><a href="#">Search</a></li>
+                        <li><a href="#">Language</a></li>
+                        <li><a href="#">Account</a></li>
+                        <li><a href="#">Wish</a></li>
+                        <li><a href="#">Cart</a></li>
                     </ul>
                 </div>
-            </div><!-- header__inner -->
-        </header>
+            </div>
+            <div class="only-pc">
+                <ul class="menu">
+                    <li class="link matinkim-link">
+                        <a href="/matinkim.html" title="matinkim">Matin Kim</a>
+                        <div class="sub-menu-container">
+                            <ul class="header-sub-menu deps1">
+                                <li>
+                                    <a href="#">NEW IN</a>
+                                </li>
+                                <li class="matinkim-shop">
+                                    <a class="sub-shop-menu" href="javascript:void(0);"
+                                        style="font-weight: 700;">SHOP</a>
+                                    <div class="sub-shop-menu-container">
+                                        <div class="header-sub-menu deps11">
+                                            <ul class="sub-items">
+                                                <li><a href="#"><span class="no-hover" style="font-weight: bold;">MEN'S
+                                                            LINE</span></a></li>
+                                                <li><a href="#"><span class="no-hover" style="font-weight: bold;">Must
+                                                            Have</span></a></li>
+                                                <li><a href="#"><span>Outerwears</span></a></li>
+                                                <li><a href="#"><span>Tops</span></a></li>
+                                            </ul>
+                                            <ul class="sub-items">
+                                                <li><a href="#"><span>Bottoms</span></a></li>
+                                                <li><a href="#"><span>Dresses</span></a></li>
+                                                <li><a href="#"><span>Shoes</span></a></li>
+                                                <li><a href="#"><span>Bags</span></a></li>
+                                                <li><a href="#"><span>Wallets</span></a></li>
+                                            </ul>
+                                            <ul class="sub-items">
+                                                <li><a href="#"><span>Hats &amp; Caps</span></a></li>
+                                                <li><a href="#"><span>Accessories</span></a></li>
+                                                <li><a href="#"><span>Underwear</span></a></li>
+                                                <li><a href="#"><span>Beauty</span></a></li>
+                                                <li><a href="#"><span>Matin kim x Peaches</span></a></li>
+                                            </ul>
+                                            <ul>
+                                                <li><a href="#"><span class="point" style="font-weight: bold;">BLACK
+                                                            FRIDAY SALE</span></a></li>
+                                            </ul>
+                                        </div>
+                                    </div><!-- sub-shop-menu-container -->
+                                </li><!-- matinkim-shop -->
+                                <li>
+                                    <a href="#">PROJECT</a>
+                                </li>
+                                <li>
+                                    <a href="#">COLLECTIONS</a>
+                                </li>
+                                <li>
+                                    <a href="#">ABOUT</a>
+                                </li>
+                            </ul><!-- header-sub-menu deps1 -->
+                        </div><!-- sub-menu-container -->
+                    </li><!-- link matinkim-link -->
+
+                    <li class="link kimmatin-link">
+                        <a href="#">KIMMATIN</a>
+                        <div class="sub-menu-container">
+                            <ul class="header-sub-menu deps2">
+                                <li class="kimmatin-archive">
+                                    <a href="javascript:void(0);">ARCHIVE</a>
+                                    <div class="header-sub-menu deps22">
+                                        <ul class="sub-items">
+                                            <li><a href="#"><span>WINTER 2024</span></a></li>
+                                            <li><a href="#"><span>FALL 2024</span></a></li>
+                                            <li><a href="#"><span>2ND SUMMER 2024</span></a></li>
+                                            <li><a href="#"><span>1ST SUMMER 2024</span></a></li>
+                                            <li><a href="#"><span>SPRING 2024</span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="kimmatin-shop">
+                                    <a href="javascript:void(0);" style="font-weight: 700;">SHOP</a>
+                                    <div class="header-sub-menu deps22">
+                                        <ul class="sub-items">
+                                            <li><a href="/product/kimmatin/list.html?cate_no=136"><span>New
+                                                        In</span></a>
+                                            </li>
+                                            <li><a href="#"><span>View All</span></a></li>
+                                            <li><a href="#"><span>Outer</span></a></li>
+                                            <li><a href="#"><span>Dresses &amp; Skirts</span></a></li>
+                                            <li><a href="#"><span>Tops</span></a></li>
+                                            <li><a href="#"><span>Pants &amp; Denim</span></a></li>
+                                            <li><a href="#"><span>Knitwear</span></a></li>
+                                            <li><a href="#"><span>Shoes &amp; Handbags</span></a></li>
+                                            <li><a href="#"><span>Other Accessories</span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">NEW IN</a>
+                                </li>
+                                <li>
+                                    <a href="#">ABOUT</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <div class="logo">
+                    <a href="#">
+                        <img src="./img/logo.png" alt="마땡킴로고">
+                    </a>
+                </div>
+                <ul class="menu2">
+                    <li>
+                        <a href="javascript:matinkimSearchOpen();" class="pc-search-btn">
+                            <span class="util-icon util-search"></span>
+                            <span class="util-text">search</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:languageOpen();" class="pc-search-btn">
+                            <span class="util-icon util-lang"></span>
+                            <span class="util-text">Language</span>
+                        </a>
+                    </li>
+                    <li class="xans-element- xans-layout xans-layout-statelogoff ">
+                        <a href="javascript:login();">
+                            <span class="util-icon util-login"></span>
+                            <span class="util-text">account</span>
+                        </a>
+                    </li>
+                    <li class="xans-element- xans-layout xans-layout-statelogoff ">
+                        <a href="javascript:login();">
+                            <span class="util-icon util-wish"></span>
+                            <span class="util-text">wish</span>
+                        </a>
+                    </li>
+                    <li class="xans-element- xans-layout xans-layout-statelogoff ">
+                        <a href="javascript:basketOpen();">
+                            <span class="util-icon util-cart"></span>
+                            <span class="util-text EC-Layout-Basket-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+                <button class="header__menu-toggle" aria-label="Toggle Menu">
+                    Menu
+                </button>
+            </div>
+    </div><!-- header__inner -->
+    </header>
     </div>
     <!-- //header -->
     <main id="main">
         <div class="main-container">
             <div class="mainimg">
-                <a href="#"><p class="main-typo">Matin Kim</p></a>
+                <a href="#">
+                    <p class="main-typo">Matin Kim</p>
+                </a>
             </div>
         </div>
 
         <div class="main-best">
             <div class="wrap" style="position: relative;">
-                <h2 class="main-section__title animate-on-scroll">Discover<span class="break"></span>our [ Best ] Sellers</h2>
+                <h2 class="main-section__title animate-on-scroll">Discover<span class="break"></span>our [ Best ]
+                    Sellers</h2>
 
                 <!-- <div class="main-best__new jt-motion--rise banner--loaded"></div> -->
-                <div class="main-best__new-bg" style="display:flex;justify-content: center;align-items: center;overflow: hidden;">
+                <div class="main-best__new-bg">
                     <img src="./img/9b2a1fef5e951fb7e8e572956a9e365a.jpg" alt="">
                 </div>
                 <!-- .main-best__new-bg-wrap -->
@@ -220,17 +242,18 @@
                                     <div class="global-product-list__bg"
                                         style="background-image: url(https://m.matinkim.com/web/product/extra/small/202406/e354e6634cd28aeea52480db335e306e.jpg);">
                                     </div>
+                                    <div class="globalWrapper">
+                                        <div class="global-product-list__img-wrap jt-lazyload jt-lazyload--loaded">
+                                            <img width="500px" height="auto"
+                                                src="https://cafe24img.poxo.com/kimdaniyaya/web/product/medium/202406/9e7b8ad0483f1df4ef8ea918c8e09a63.jpg"
+                                                alt="">
+                                        </div>
 
-                                    <div class="global-product-list__img-wrap jt-lazyload jt-lazyload--loaded">
-                                        <img width="500px" height="auto"
-                                            src="https://cafe24img.poxo.com/kimdaniyaya/web/product/medium/202406/9e7b8ad0483f1df4ef8ea918c8e09a63.jpg"
-                                            alt="">
-                                    </div>
-
-                                    <div class="global-product-list__content">
-                                        <h4 class="global-product-list__title jt-typo--13">LOGO WASHED DENIM DUFFEL
-                                            BAG<br>IN BLACK</h4>
-                                        <span class="global-product-list__detail jt-typo--16">128,000</span>
+                                        <div class="global-product-list__content">
+                                            <h4 class="global-product-list__title jt-typo--13">LOGO WASHED DENIM DUFFEL
+                                                BAG<br>IN BLACK</h4>
+                                            <span class="global-product-list__detail jt-typo--16">128,000</span>
+                                        </div>
                                     </div>
                                 </a>
                             </div>
@@ -240,17 +263,18 @@
                                     <div class="global-product-list__bg"
                                         style="background-image: url(https://m.matinkim.com/web/product/extra/small/202403/086cbf1b5feda65110fd958d0ac81e80.jpg);">
                                     </div>
+                                    <div class="globalWrapper">
+                                        <div class="global-product-list__img-wrap jt-lazyload jt-lazyload--loaded">
+                                            <img width="500px" height="auto"
+                                                src="https://cafe24img.poxo.com/kimdaniyaya/web/product/medium/202403/9e31ebcdae905d03ddf05cd7647e586c.jpg"
+                                                alt="">
+                                        </div>
 
-                                    <div class="global-product-list__img-wrap jt-lazyload jt-lazyload--loaded">
-                                        <img width="500px" height="auto"
-                                            src="https://cafe24img.poxo.com/kimdaniyaya/web/product/medium/202403/9e31ebcdae905d03ddf05cd7647e586c.jpg"
-                                            alt="">
-                                    </div>
-
-                                    <div class="global-product-list__content">
-                                        <h4 class="global-product-list__title jt-typo--13">GLOSSY LOGO SPORTY DUFFEL
-                                            BAG<br>IN SILVER</h4>
-                                        <span class="global-product-list__detail jt-typo--16">148,000</span>
+                                        <div class="global-product-list__content">
+                                            <h4 class="global-product-list__title jt-typo--13">GLOSSY LOGO SPORTY DUFFEL
+                                                BAG<br>IN SILVER</h4>
+                                            <span class="global-product-list__detail jt-typo--16">148,000</span>
+                                        </div>
                                     </div>
                                 </a>
                             </div>
@@ -260,17 +284,18 @@
                                     <div class="global-product-list__bg"
                                         style="background-image: url(https://m.matinkim.com/web/product/extra/small/202304/c665fd02407f815ad10fed87695fcfce.jpg);">
                                     </div>
-
-                                    <div class="global-product-list__img-wrap jt-lazyload jt-lazyload--loaded">
-                                        <img width="500px" height="auto"
-                                            src="https://cafe24img.poxo.com/kimdaniyaya/web/product/medium/202304/280ef3df4070e07d4a84dd4d6662bb9e.jpg"
-                                            alt="">
-                                    </div>
-
-                                    <div class="global-product-list__content">
-                                        <h4 class="global-product-list__title jt-typo--13">LOGO SPORTY DUFFEL BAG<br>IN
-                                            GREY</h4>
-                                        <span class="global-product-list__detail jt-typo--16">148,000</span>
+                                    <div class="globalWrapper">
+                                        <div class="global-product-list__img-wrap jt-lazyload jt-lazyload--loaded">
+                                            <img width="500px" height="auto"
+                                                src="https://cafe24img.poxo.com/kimdaniyaya/web/product/medium/202304/280ef3df4070e07d4a84dd4d6662bb9e.jpg"
+                                                alt="">
+                                        </div>
+                                        <div class="global-product-list__content">
+                                            <h4 class="global-product-list__title jt-typo--13">LOGO SPORTY DUFFEL
+                                                BAG<br>IN
+                                                GREY</h4>
+                                            <span class="global-product-list__detail jt-typo--16">148,000</span>
+                                        </div>
                                     </div>
                                 </a>
                             </div>
@@ -280,17 +305,17 @@
                                     <div class="global-product-list__bg"
                                         style="background-image: url(https://m.matinkim.com/web/product/extra/small/202408/7a6becd13af6e357137cef5930108aed.jpg);">
                                     </div>
-
-                                    <div class="global-product-list__img-wrap jt-lazyload jt-lazyload--loaded">
-                                        <img width="500px" height="auto"
-                                            src="https://m.matinkim.com/web/product/medium/202408/08a93a8d096f601e22ee078af3c84525.jpg"
-                                            alt="">
-                                    </div>
-
-                                    <div class="global-product-list__content">
-                                        <h4 class="global-product-list__title jt-typo--13">TWO WAY STRAP SQUARE
-                                            BAG<br>IN BLACK</h4>
-                                        <span class="global-product-list__detail jt-typo--16">168,000</span>
+                                    <div class="globalWrapper">
+                                        <div class="global-product-list__img-wrap jt-lazyload jt-lazyload--loaded">
+                                            <img width="500px" height="auto"
+                                                src="https://m.matinkim.com/web/product/medium/202408/08a93a8d096f601e22ee078af3c84525.jpg"
+                                                alt="">
+                                        </div>
+                                        <div class="global-product-list__content">
+                                            <h4 class="global-product-list__title jt-typo--13">TWO WAY STRAP SQUARE
+                                                BAG<br>IN BLACK</h4>
+                                            <span class="global-product-list__detail jt-typo--16">168,000</span>
+                                        </div>
                                     </div>
                                 </a>
                             </div>
@@ -300,17 +325,18 @@
                                     <div class="global-product-list__bg"
                                         style="background-image: url(https://m.matinkim.com/web/product/extra/small/202407/9065a5ba6bdf6fe8e8dc144f5474b9d4.jpg);">
                                     </div>
-
-                                    <div class="global-product-list__img-wrap jt-lazyload jt-lazyload--loaded">
-                                        <img width="500px" height="auto"
-                                            src="https://m.matinkim.com/web/product/medium/202407/7e30c53018c96e9009fdefae8516751f.jpg"
-                                            alt="">
-                                    </div>
-
-                                    <div class="global-product-list__content">
-                                        <h4 class="global-product-list__title jt-typo--13">NYLON BOSTON BAG<br>IN BEIGE
-                                        </h4>
-                                        <span class="global-product-list__detail jt-typo--16">158,000</span>
+                                    <div class="globalWrapper">
+                                        <div class="global-product-list__img-wrap jt-lazyload jt-lazyload--loaded">
+                                            <img width="500px" height="auto"
+                                                src="https://m.matinkim.com/web/product/medium/202407/7e30c53018c96e9009fdefae8516751f.jpg"
+                                                alt="">
+                                        </div>
+                                        <div class="global-product-list__content">
+                                            <h4 class="global-product-list__title jt-typo--13">NYLON BOSTON BAG<br>IN
+                                                BEIGE
+                                            </h4>
+                                            <span class="global-product-list__detail jt-typo--16">158,000</span>
+                                        </div>
                                     </div>
                                 </a>
                             </div>
@@ -320,17 +346,19 @@
                                     <div class="global-product-list__bg"
                                         style="background-image: url(https://m.matinkim.com/web/product/extra/small/202306/10114e3b38b316c861e64ac5c6380be9.jpg);">
                                     </div>
-
-                                    <div class="global-product-list__img-wrap jt-lazyload jt-lazyload--loaded">
-                                        <img width="500px" height="auto"
-                                            src="https://m.matinkim.com/web/product/medium/202404/3b248da6a43ff5ddaf9f4adfc7f6d050.jpg"
-                                            style="transform:translate(0px, -50px)" alt="">
-                                    </div>
-
-                                    <div class="global-product-list__content">
-                                        <h4 class="global-product-list__title jt-typo--13">SPORTY TOTE BAG<br>IN LIGHT
-                                            GREY</h4>
-                                        <span class="global-product-list__detail jt-typo--16">145,000</span>
+                                    <div class="globalWrapper">
+                                        <div id="editImg"
+                                            class="global-product-list__img-wrap jt-lazyload jt-lazyload--loaded">
+                                            <img width="500px" height="auto"
+                                                src="https://m.matinkim.com/web/product/medium/202404/3b248da6a43ff5ddaf9f4adfc7f6d050.jpg"
+                                                style="transform:translate(0px, -50px)" alt="">
+                                        </div>
+                                        <div class="global-product-list__content">
+                                            <h4 class="global-product-list__title jt-typo--13">SPORTY TOTE BAG<br>IN
+                                                LIGHT
+                                                GREY</h4>
+                                            <span class="global-product-list__detail jt-typo--16">145,000</span>
+                                        </div>
                                     </div>
                                 </a>
                             </div>
@@ -340,17 +368,18 @@
                                     <div class="global-product-list__bg"
                                         style="background-image: url(https://m.matinkim.com/web/product/extra/small/202411/7fd05e9a5f7b7a87ec546133e41913e0.jpg);">
                                     </div>
-
-                                    <div class="global-product-list__img-wrap jt-lazyload jt-lazyload--loaded">
-                                        <img width="500px" height="auto"
-                                            src="https://m.matinkim.com/web/product/medium/202411/94ae8f080fb72d982ab88281a012881f.jpg"
-                                            alt="">
-                                    </div>
-
-                                    <div class="global-product-list__content">
-                                        <h4 class="global-product-list__title jt-typo--13">MATIN BIG PUFFER BAG<br>IN
-                                            BLACK</h4>
-                                        <span class="global-product-list__detail jt-typo--16">142,200</span>
+                                    <div class="globalWrapper">
+                                        <div class="global-product-list__img-wrap jt-lazyload jt-lazyload--loaded">
+                                            <img width="500px" height="auto"
+                                                src="https://m.matinkim.com/web/product/medium/202411/94ae8f080fb72d982ab88281a012881f.jpg"
+                                                alt="">
+                                        </div>
+                                        <div class="global-product-list__content">
+                                            <h4 class="global-product-list__title jt-typo--13">MATIN BIG PUFFER
+                                                BAG<br>IN
+                                                BLACK</h4>
+                                            <span class="global-product-list__detail jt-typo--16">142,200</span>
+                                        </div>
                                     </div>
                                 </a>
                             </div>
@@ -360,17 +389,17 @@
                                     <div class="global-product-list__bg"
                                         style="background-image: url(https://m.matinkim.com/web/product/extra/small/202410/cb4a2d808657013796692f5ea9884584.jpg);">
                                     </div>
-
-                                    <div class="global-product-list__img-wrap jt-lazyload jt-lazyload--loaded">
-                                        <img width="500px" height="auto"
-                                            src="https://m.matinkim.com/web/product/medium/202410/47bf286d1701b1cfc0908724efbcdd70.jpg"
-                                            alt="">
-                                    </div>
-
-                                    <div class="global-product-list__content">
-                                        <h4 class="global-product-list__title jt-typo--13">BUCKLE STRAP SHOULDER
-                                            BAG<br>IN BLACK</h4>
-                                        <span class="global-product-list__detail jt-typo--16">148,000</span>
+                                    <div class="globalWrapper">
+                                        <div class="global-product-list__img-wrap jt-lazyload jt-lazyload--loaded">
+                                            <img width="500px" height="auto"
+                                                src="https://m.matinkim.com/web/product/medium/202410/47bf286d1701b1cfc0908724efbcdd70.jpg"
+                                                alt="">
+                                        </div>
+                                        <div class="global-product-list__content">
+                                            <h4 class="global-product-list__title jt-typo--13">BUCKLE STRAP SHOULDER
+                                                BAG<br>IN BLACK</h4>
+                                            <span class="global-product-list__detail jt-typo--16">148,000</span>
+                                        </div>
                                     </div>
                                 </a>
                             </div>
@@ -380,17 +409,17 @@
                                     <div class="global-product-list__bg"
                                         style="background-image: url(https://m.matinkim.com/web/product/extra/small/202411/57e2c7acb65d86f5c57497d2fad78715.jpg);">
                                     </div>
-
-                                    <div class="global-product-list__img-wrap jt-lazyload jt-lazyload--loaded">
-                                        <img width="500px" height="auto"
-                                            src="https://m.matinkim.com/web/product/medium/202411/8865f1436d5c5d9e44dde3e7b751c93b.jpg"
-                                            alt="">
-                                    </div>
-
-                                    <div class="global-product-list__content">
-                                        <h4 class="global-product-list__title jt-typo--13">MATIN CORDUROY MIDDLE
-                                            ECOBAG<br>IN PINK</h4>
-                                        <span class="global-product-list__detail jt-typo--16">52,200</span>
+                                    <div class="globalWrapper">
+                                        <div class="global-product-list__img-wrap jt-lazyload jt-lazyload--loaded">
+                                            <img width="500px" height="auto"
+                                                src="https://m.matinkim.com/web/product/medium/202411/8865f1436d5c5d9e44dde3e7b751c93b.jpg"
+                                                alt="">
+                                        </div>
+                                        <div class="global-product-list__content">
+                                            <h4 class="global-product-list__title jt-typo--13">MATIN CORDUROY MIDDLE
+                                                ECOBAG<br>IN PINK</h4>
+                                            <span class="global-product-list__detail jt-typo--16">52,200</span>
+                                        </div>
                                     </div>
                                 </a>
                             </div>
@@ -517,8 +546,8 @@
                     <div class="wrap">
                         <div class="main-skincare__colgroup animate-on-scroll">
                             <div class="main-skincare__bg-wrap">
-                                <div class="main-skincare__bg"
-                                    style="background-image: url(https://matinkim.com/images/kimmatin/archive/2024/fall/10.jpg);">
+                                <div class="main-skincare__bg">
+                                    <img src="https://matinkim.com/images/kimmatin/archive/2024/fall/10.jpg" alt="">
                                 </div>
                             </div>
                             <div class="main-skincare__content stagger-item">
@@ -535,26 +564,27 @@
 
                 <div class="main-brandstory">
                     <div class="wrap">
-                        <div class="main-brandstory-bg"></div>
-                        <div class="main-brandstory__content animate-on-scroll">
-                            <div class="main-brandstory__content-inner">
-                                <h2 class="main-brandstory__title">"Touch Your"
-                                    <span class="main-brandstory__keyword-wrap">
-                                        <span class="main-brandstory__keyword">
-                                            <span class="main-brandstory__keyword-item">Seoul</span>
-                                            <!-- <span class="main-brandstory__keyword-item">Urbanity</span>
+                        <div class="main-brandstory-bg">
+                            <div class="main-brandstory__content animate-on-scroll">
+                                <div class="main-brandstory__content-inner">
+                                    <h2 class="main-brandstory__title">"Touch Your"
+                                        <span class="main-brandstory__keyword-wrap">
+                                            <span class="main-brandstory__keyword">
+                                                <span class="main-brandstory__keyword-item">Seoul</span>
+                                                <!-- <span class="main-brandstory__keyword-item">Urbanity</span>
                                             <span class="main-brandstory__keyword-item">Nature</span>
                                             <span class="main-brandstory__keyword-item">Life</span>
                                             <span class="main-brandstory__keyword-item">Seoul</span> -->
+                                            </span>
                                         </span>
-                                    </span>
-                                </h2><!-- main-brandstory__title -->
-                                <div class="main-brandstory__desc-wrap">KIMMATIN embraces the beauty of
-                                    imperfection,<br>evident in elements like casually cut hems and natural drapes.
+                                    </h2><!-- main-brandstory__title -->
+                                    <div class="main-brandstory__desc-wrap">KIMMATIN embraces the beauty of
+                                        imperfection,<br>evident in elements like casually cut hems and natural drapes.
+                                    </div>
+                                    <a href="#" class="main-brandstory-btn">Read more</a>
                                 </div>
-                                <a href="#" class="main-brandstory-btn">Read more</a>
-                            </div>
-                        </div><!-- main-brandstory__content -->
+                            </div><!-- main-brandstory__content -->
+                        </div>
                     </div><!-- wrap -->
                 </div><!-- main-brandstory -->
 
@@ -567,27 +597,21 @@
                                 <div class="main-insta__list-item">
                                     <a href="#">
                                         <figure class="main-insta__list-figure">
-                                            <img width="443" height="443"
-                                                src="./img/insta/01.png"
-                                                alt="">
+                                            <img src="./img/insta/01.png" alt="">
                                         </figure>
                                     </a>
                                 </div>
                                 <div class="main-insta__list-item">
                                     <a href="#">
                                         <figure class="main-insta__list-figure">
-                                            <img width="443" height="443"
-                                                src="./img/insta/05.png"
-                                                alt="">
+                                            <img src="./img/insta/05.png" alt="">
                                         </figure>
                                     </a>
                                 </div>
                                 <div class="main-insta__list-item">
                                     <a href="#">
                                         <figure class="main-insta__list-figure">
-                                            <img width="443" height="443"
-                                                src="./img/insta/02.png"
-                                                alt="">
+                                            <img src="./img/insta/02.png" alt="">
                                         </figure>
                                     </a>
                                 </div>
@@ -597,18 +621,14 @@
                                 <div class="main-insta__list-item">
                                     <a href="#">
                                         <figure class="main-insta__list-figure">
-                                            <img width="443px" height="443px"
-                                                src="./img/insta/03.png"
-                                                alt="">
+                                            <img src="./img/insta/03.png" alt="">
                                         </figure>
                                     </a>
                                 </div>
                                 <div class="main-insta__list-item">
                                     <a href="#">
                                         <figure class="main-insta__list-figure">
-                                            <img width="443" height="443"
-                                                src="./img/insta/04.png"
-                                                alt="">
+                                            <img src="./img/insta/04.png" alt="">
                                         </figure>
                                     </a>
                                 </div>
